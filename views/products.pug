@@ -1,0 +1,27 @@
+extends index.pug
+
+
+
+block content
+    
+
+    .container
+        a.btn.btn-success(href='./create' id='button') create New Post
+        .row
+            each user in users
+                .col-md-3.col-sm-6(style='margin:20px;')
+                    figure.card.card-product
+                    .img-wrap
+                        img(src='https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RW6KQQ?ver=d4c4&q=90&m=6&h=200&w=200&b=%23FFFFFFFF&f=jpg&o=f&aim=true' href="/productinside" )
+                    figcaption.info-wrap
+                        a.title(href='/products/'+user._id) #{user.productname}
+                        p #{user.text}
+                        .price-wrap
+                        span.price-new #{user.price}
+                        // price-wrap.//
+                        // card //
+                        // col //
+                        .col-md-3.col-sm-6
+                        figure.card.card-product
+            
+                

@@ -1,0 +1,36 @@
+extends index.pug
+
+
+block content
+    .container
+        h1 Post Head
+        hr
+        h5 Posted on january 1, 2019 at 12:00 PM
+        hr
+        img(src='https://media.istockphoto.com/photos/laughing-woman-in-park-picture-id658617510?k=6&m=658617510&s=612x612&w=0&h=Ycl_BBwWQop7Wj1wWG3nyQqB5glPxRuqmb02WpKp0ao=', alt='')
+        p.lead
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?
+        p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.
+        p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!
+        blockquote.blockquote
+            p.mb-0
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            footer.blockquote-footer
+            | Someone famous in
+            cite(title='Source Title') Source Title
+        p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?
+        p
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!
+        hr
+        // Comments Form
+        .card.my-4
+            h5.card-header Leave a Comment:
+            .card-body
+            form
+                .form-group
+                textarea.form-control(rows='3')
+                button.btn.btn-primary(type='submit') Submit
+        

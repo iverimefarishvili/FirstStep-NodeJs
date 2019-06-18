@@ -1,0 +1,19 @@
+extends index.pug
+
+
+block content
+  .container
+    form(action='/createpost', method='post')
+        .form-group
+            label(for='heading') Post Name
+            input#heading.form-control(type='text',name='productname', aria-describedby='emailHelp', placeholder='Enter Name')
+        .form-group
+            label(for='text') Text
+            textarea#text.form-control(name='text', cols='30', rows='10') text
+        .imageupload.panel.panel-default
+            label(for='imgupload') Upload Image
+            #imgupload.file-tab.panel-body
+            label.btn.btn-default.btn-file
+                span Browse
+                input(type='file', name='image')
+        button.btn.btn-success(type='submit') Create Post
